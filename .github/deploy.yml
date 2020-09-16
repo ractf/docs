@@ -1,0 +1,19 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+  repository_dispatch:
+    types: [deploy_docs_site]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Trigger docs-site build
+      run: |
+        curl -X POST ${{ secrets.WEBHOOK_URL }} \
+        -H 'Authorization: token ${{ secrets.WEBHOOK_TOKEN }} \
+        --data '{"event_type": "deploy_docs_site"}'
