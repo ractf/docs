@@ -13,5 +13,5 @@ jobs:
     - name: Trigger docs-site build
       run: |
         curl -X POST ${{ secrets.WEBHOOK_URL }} \
-        -H 'Authorization: token ${{ secrets.WEBHOOK_TOKEN }} \
+        -H 'Authorization: token ${{ secrets.WEBHOOK_TOKEN }}' \
         --data '{"event_type": "deploy_docs_site"}'
