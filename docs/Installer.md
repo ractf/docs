@@ -18,7 +18,7 @@ The next thing you'll be asked for is the public URL of your API. In other words
 
 After this, you'll be asked for the URL visitors will access your site through. This is where your users will access your instance of Shell.
 
-Finally, you'll be asked for a pair of AWS keys for mail.
+Finally, you'll be asked to enter credentials for sending emails. Currently we support AWS, Sendgrid and SMTP.
 
 ## Finishing up
 
