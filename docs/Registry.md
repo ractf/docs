@@ -36,6 +36,7 @@ To update a container, push a new container with the same tag and your update wi
    ```
 
 3. Create a container with the right tag.
+
    1. To tag an existing container
 
       ```bash
