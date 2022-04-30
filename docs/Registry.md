@@ -40,17 +40,17 @@ To update a container, push a new container with the same tag and your update wi
    1. To tag an existing container
 
       ```bash
-      docker tag <Existing Tag> <Registry URL>:<RACTF Event Name>/<Container Name>
+      docker tag <Existing Tag> <Registry URL>/<RACTF Event Name>:<Container Name>
       ```
 
    2. To build a new container.
 
       ```bash
-      docker build -t <Registry URL>:<RACTF Event Name>/<Container Name> .
+      docker build -t <Registry URL>/<RACTF Event Name>:<Container Name> .
       ```
 
 4. Push your container.
 
    ```bash
-   docker push <Registry URL>:<RACTF Event Name>/<Container Name>
+   docker push <Registry URL>/<RACTF Event Name>:<Container Name>
    ```
