@@ -16,6 +16,7 @@ Welcome to RACTF Cloud! To get you up and running, please collect and return the
   * Single-user challenge containers?
 * Grafana access required?
   * We expose a limited subset of statistics directly through the platform, but we can provide access to a Grafana instance with additional details if required.
+  * Please specify what email addresses we should invite to Grafana.
 * Google Analytics token
   * If you do not provide a token, we will use a generic token on your deployment for our internal analytics.
 
